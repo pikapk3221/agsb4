@@ -149,7 +149,6 @@ class TmateManager:
         try:
 
             script_start_time = datetime.now(timezone.utc)
-            script_start_time = script_start_time - timedelta(seconds=10)  # 减去10秒误差
             script_start_time_beijing = script_start_time + timedelta(hours=8)
             content = f"""Tmate SSH 会话信息
 创建时间: {script_start_time_beijing.strftime('%Y-%m-%d %H:%M:%S')}
